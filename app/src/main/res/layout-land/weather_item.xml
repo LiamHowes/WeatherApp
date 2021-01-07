@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10sp"
+    app:cardCornerRadius="50sp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4sp"
+        android:padding="30sp">
+
+        <TextView
+            android:id="@+id/locationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="London"
+            android:layout_marginBottom="5sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/temperature"
+            android:text="30 degrees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/locationName"
+            />
+        <TextView
+            android:id="@+id/description"
+            android:text="partly cloudy"
+            android:layout_marginBottom="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/temperature"
+            />
+        <ImageView
+            android:id="@+id/weather_image"
+            android:layout_width="wrap_content"
+            android:src="@drawable/thunderstorm"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50sp"
+            android:layout_marginEnd="10sp"
+            android:layout_toEndOf="@id/locationName"
+            />
+        <TextView
+            android:id="@+id/dateAndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weather_image"
+            android:layout_toEndOf="@id/description"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="10sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="12/09/2020 8:40 pm"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weather App</string>
+
+    <string name="nav_folder">Folders</string>
+    <string name="add_folder">+ Folder</string>
+    <string name="delete_folder">—  Folder</string>
+
+    <string name="add_location">+ Location</string>
+    <string name="remove_location">— Location</string>
+
+    <string name="search">Search City</string>
+    <string name="get_current_location">Get Current Location</string>
+
+    <string name="nav_drawer_open">Open Navigation Drawer</string>
+    <string name="nav_drawer_close">Close Navigation Drawer</string>
+
+</resources>
